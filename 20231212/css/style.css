@@ -1,15 +1,122 @@
 @charset "utf-8";
 
-ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  list-style: none;
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
   padding: 0;
-  max-width: 980px;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #000;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/*ここから課題*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.content {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 50px;
+}
+li {
+  padding: 5px;
+}
+
+li {
+  border-left: 1px solid rgb(27, 24, 25);
+  height: 20px;
+  padding: 0 15px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-ul li {
-  padding: 0 20px;
+.wrap div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: blue;
+  color: rgb(200, 189, 174);
+  margin-bottom: 80px;
+}
+.wrap2 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.wrap2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 300px;
+  margin: 10px auto;
+  background-color: red;
+  color: rgb(200, 189, 174);
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    display: block;
+  }
+  .wrap div {
+    width: 100%;
+  }
 }
