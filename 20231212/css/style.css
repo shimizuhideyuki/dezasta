@@ -65,12 +65,11 @@ img {
 }
 li {
   padding: 5px;
+  padding: 0 15px;
 }
 
-li {
+li + li {
   border-left: 1px solid rgb(27, 24, 25);
-  height: 20px;
-  padding: 0 15px;
 }
 
 .wrap {
@@ -113,10 +112,25 @@ li {
 }
 
 @media screen and (max-width: 767px) {
-  .wrap {
+  .header,
+  .content,
+  .wrap,
+  .wrap2 {
     display: block;
   }
-  .wrap div {
+  .wrap div,
+  .wrap2 div {
     width: 100%;
+  }
+  .content {
+    padding: 20px 0;
+  }
+  li {
+    margin-bottom: 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid#000;
+  }
+  li + li {
+    border-left: 0;
   }
 }
