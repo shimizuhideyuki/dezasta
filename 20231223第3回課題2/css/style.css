@@ -24,6 +24,10 @@ li {
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
+body {
+  background: #eee;
+}
+
 a {
   /*下線を消す*/
   text-decoration: none;
@@ -50,13 +54,6 @@ img {
   text-align: center;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 960px;
-  margin: 0 auto;
-  align-items: center;
-}
 .section-title {
   border-left: 7px solid cadetblue;
   color: cadetblue;
@@ -64,33 +61,36 @@ img {
   margin: 10px 16px 10px 16px;
 }
 
-.sarvice {
-  padding: 10 px;
-  margin: 10px;
-  background-color: rgb(255, 255, 255);
+.service {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  /* padding: 10px; */
+}
+.service li {
+  background-color: #fff;
   width: 32%;
-  margin: 20px 0 auto;
+  margin-bottom: 20px;
+}
+
+.service li img {
+  width: 100%;
 }
 
 p {
   font-size: 15px;
-  color: rgb(86, 83, 83);
-  margin: 10px 15px 15px 15px;
+  color: #7d7d7d;
+  padding: 0px 15px 15px 15px;
   letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 400px) {
-  .container,
-  .section-title,
-  .sarvice,
-  p {
+  .service {
     display: block;
   }
 
-  .container,
-  .section-title,
-  .sarvice,
-  p {
+  .service li {
     width: 100%;
   }
 }
