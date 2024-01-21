@@ -7,12 +7,13 @@
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイト">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="header_slider">
             <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
         </div>
@@ -27,147 +28,157 @@
                     <li><a href="">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">EVENT</a></li>
+                    <li><a href="">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-
-
-
     <main>
         <div id="lead" class="lead">
+            <p class="lead_text1">Have a happy day From a cup of coffee.</p>
+            <p class="lead_text2">
+                ハッピーに溢れる1日を<br>
+                1杯のコーヒーから。</p>
+            <p class="lead_text3">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
 
-            <div class="lead_wrap">
+        </div>
 
-                <p class="lead_text1">Have a happy day From a cup of coffee.</p>
-                <p class="lead_text2">
-                    ハッピーに溢れる1日を<br>
-                    1杯のコーヒーから。</p>
-                <p class="lead_text3">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-                    足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
 
+        <section id="about" class="about">
+            <div class="about_box">
+                <img class="about_photo" src="images/pc_about-100.jpg" alt="コーヒー">
+            </div>
+            <div class="about_imagebox">
+                <h2 class="about_logo"><img src="images/about_us@2x.png" alt="about us"> </h2>
+
+                <h3 class="about_title">
+                    私たちが提供する<br>こだわりのコーヒー </h3>
+                <p class="about_text">
+                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                </p>
+            </div>
+        </section>
+        <section id="menu" class="menu">
+            <h2 class="menu_title"><img src="images/menu@2x.png" alt="menu"></h2>
+            <ul class="menu_box">
+                <li class="menu_category">
+                    <img class="menu_item_photo" src="images/pc_menu_drink-100.jpg" alt="drink">
+                    <h3 class="menu_item_heading">Drink</h3>
+                    <p class="menu_item_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                </li>
+                <li class="menu_category">
+                    <img class="menu_item_photo" src="images/pc_menu_food-100.jpg" alt="food">
+                    <h3 class="menu_item_heading">Food</h3>
+                    <p class="menu_item_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                </li>
+                <li class="menu_category">
+                    <img class="menu_item_photo" src="images/pc_menu_sweets-100.jpg" alt="sweets">
+                    <h2 class="menu_item_heading">Sweets</h2>
+                    <p class="menu_item_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                </li>
+            </ul>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2 class="gallery_title"><img src="images/gallery@2x.png" alt="gallery"></h2>
+            <div class="gallery_box">
+                <div class="gallery_photo">
+                    <img src="images/pc_gallary_05-100.jpg" alt="店内の人">
+                </div>
+                <div class="gallery_photo">
+                    <img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
+                </div>
+                <div class="gallery_photo">
+                    <img src="images/pc_gallary_03-100.jpg" alt="店内">
+                </div>
+                <div class="gallery_photo">
+                    <img src="images/pc_gallary_02-100.jpg" alt="店内ライト">
+                </div>
+                <div class="gallery_photo">
+                    <img src="images/pc_gallary_01-100.jpg" alt="ラテアート">
+                </div>
             </div>
 
 
-            <section id="about" class="about">
-                <div class="about_box">
-                    <img class="about_photo" src="images/pc_about-100.jpg" alt="コーヒー">
-                </div>
-                <div class="about_imagebox">
-                    <h2 class="about_logo"><img src="images/about_us@2x.png" alt="about us"> </h2>
+        </section>
+        <section id="event" class="event">
+            <h2 class="event_title"><img src="images/event@2x.png" alt="event"></h2>
+            <div class="event_list">
+                <ul>
+                    <li>
+                        <time datetime="2020-06-23">2020.06.23</time>
+                        <a href="">7月はイベント出店のため0/0お休みします</a>
+                    </li>
+                    <li>
+                        <time datetime="2020-03-15">2020.03.15</time>
+                        <a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
+                    </li>
 
-                    <h3 class="about_title">
-                        私たちが提供する<br>こだわりのコーヒー </h3>
-                    <p class="about_text">
-                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                    </p>
-                </div>
-
-
-
-                <section id="menu" class="menu">
-                    <h2 class="menu_title"><img src="images/menu@2x.png" alt="menu"></h2>
-                    <div class="menu_box">
-                        <div class="menu_category">
-                            <img class="menu_item_photo" src="images/pc_menu_drink-100.jpg" alt="drink">
-                            <h3 class="menu_item_heading">Drink</h3>
-                            <p class="menu_item_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                        </div>
-                        <div class="menu_category">
-                            <img class="menu_item_photo" src="images/pc_menu_food-100.jpg" alt="food">
-                            <h3 class="menu_item_heading">Food</h3>
-                            <p class="menu_item_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                        </div>
-                        <div class="menu_category">
-                            <img class="menu_item_photo" src="images/pc_menu_sweets-100.jpg" alt="sweets">
-                            <h2 class="menu_item_heading">Sweets</h2>
-                            <p class="menu_item_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                        </div>
-                    </div>
-                </section>
-
-
-
-
-
-
-                <section id="gallery" class="gallery">
-                    <h3 class="gallery_title"><img src="images/gallery@2x.png" alt="gallery"></h3>
-                    <div class="gallery_box">
-                        <div class="gallery_photo">
-                            <img src="images/pc_gallary_05-100.jpg" alt="店内の人">
-                        </div>
-                        <div class="gallery_photo">
-                            <img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
-                        </div>
-                        <div class="gallery_photo">
-                            <img src="images/pc_gallary_03-100.jpg" alt="店内">
-                        </div>
-                        <div class="gallery_photo">
-                            <img src="images/pc_gallary_02-100.jpg" alt="店内ライト">
-                        </div>
-                        <div class="gallery_photo">
-                            <img src="images/pc_gallary_01-100.jpg" alt="ラテアート">
-                        </div>
-                    </div>
-
-
-                </section>
-
-
-                <section id="event" class="eventt">
-                    <h2 class="event_title"><img src="images/event@2x.png" alt="event"></h2>
-                    <div class="event_list">
-                        <ul>
-                            <li>
-                                <a>2020.06.23</a>
-                                <a>7月はイベント出店のため0/0お休みします</a>
-                            </li>
-                            <li>
-                                <a>>2020.03.15</a>
-                                <a>春の新商品新発売。話題のあのブランドとコラボ</a>
-                            </li>
-
-                            <li><a>2020.02.06</a>
-                                <a>コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-
-
-
-                <section id="access" class="access">
-                    <h2 class="access_title"><img src="images/access@2x.png" alt="access"></h2>
-                    <div class="access_map">
-                        <map
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.770164459429!2d139.69906087533494!3d35.6580338725948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1705215458500!5m2!1sja!2sjp"></map>
-                    </div>
-                </section>
+                    <li><time datetime="2020-02-06">2020.02.06</time>
+                        <a href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="access" class="access">
+            <h2 class="access_title"><img src="images/access@2x.png" alt="access"></h2>
+            <div class="access_map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12967.0806533878!2d139.7016358!3d35.6580339!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1705820050790!5m2!1sja!2sjp"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
 
 
     </main>
     <footer>
         <div class="footer_box">
-            <img class="footer_title" src="images/design_cafe_logo_footer@2x.png" alt="design cafe">
-            <div class="footer_boxbox">
-                <p>OPEN 18:00 / CLOSE 24:00</p>
-                <p>〒150-0022<br></p>
-                <p>東京都渋谷区東京南123デザインビルB1<br></p>
-                <p>MAIL：info@designcafe.tokyo</p>
+            <div class="footer_title">
+                <img class="footer_title" src="images/design_cafe_logo_footer@2x.png" alt="design cafe">
             </div>
+            <p class="footer_boxbox">
+                OPEN 18:00 / CLOSE 24:00<br>
+                〒150-0022<br>
+                東京都渋谷区東京南123デザインビルB1<br>
+                MAIL：info@designcafe.tokyo
+            </p>
         </div>
-        <div class="c">© 2021 DESIGN CAFE</div>
+        <div class="footer_copy">© 2021 DESIGN CAFE</div>
     </footer>
 
 
-    <div class="pagetop">
+
+
+
+
+
+
+
+    <a href="#header" class="pagetop">
         <img src="images/to_top@2x.png" alt="PAGE TOP">
-    </div>
+    </a>
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
+
 </body>
 
 </html>

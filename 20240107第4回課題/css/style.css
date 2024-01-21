@@ -23,6 +23,11 @@ li {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
     "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
     "ＭＳ 明朝", serif;
+  font-feature-settings: "palt";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -89,61 +94,150 @@ body {
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
+.pc_nav ul li + li {
+  margin-left: 55px;
+}
+
+.header_slider img {
+  width: 100%;
+}
+/*スマホ版メニューは消す*/
+.sp_nav,
+.sp_btn {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .pc_nav {
+    display: none;
+  }
+
+  /* ハンバーガー */
+  .sp_btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: block;
+    height: 23px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .sp_btn span {
+    position: relative;
+    top: 10px;
+    display: block;
+    width: 33px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    transition: 0.3s;
+  }
+  .sp_btn span::before,
+  .sp_btn span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 33px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    transition: 0.3s;
+  }
+}
+.sp_btn span::before {
+  bottom: 10px;
+}
+.sp_btn span::after {
+  top: 10px;
+}
+
+/*ハンバーガー 閉じる*/
+.sp_btn.open span {
+  background: transparent;
+}
+.sp_btn.open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.sp_btn.open span::after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+/* ハンバーガーメニュー*/
+.sp_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* デバイスの高さ100% */
+  background: rgba(0, 0, 0, 0.8); /* カンマとピリオドに注意！ */
+  z-index: 1;
+}
+
+.sp_nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sp_nav ul li {
+  padding: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
 .pc_nav ul {
   display: flex;
 }
 
 .lead {
   max-width: 1000px;
-  margin: 0 auto;
-}
-
-.lead_wrap {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin: 100px auto 50px;
   font-size: 28px;
+  text-align: center;
 }
 
 .lead_text1 {
   font-size: 30px;
-  text-align: center;
   margin-bottom: 50px;
 }
 
 .lead_text2 {
   font-size: 82px;
   line-height: 1.17;
-  text-align: center;
   margin-bottom: 30px;
 }
 
 .lead_text3 {
   font-size: 23px;
   line-height: 1.65;
-  text-align: center;
   margin-bottom: 50px;
 }
 
 .about {
   max-width: 1000px;
+  justify-content: space-between;
   margin: 0 auto;
+  display: flex;
 }
 
 .about_box {
-  margin: 0 auto;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
+  width: 50%;
 }
 
 .about_photo {
-  width: 50%;
-  border-radius: 0 0 70px 0;
+  border-radius: 0 0 80px 0;
 }
 
 .about_imagebox {
   width: 42%;
   margin: 50px 0 50px;
+  padding-right: 10px;
 }
 
 .about_logo {
@@ -152,7 +246,8 @@ body {
 }
 
 .about_title {
-  font-size: 40px;
+  font-size: 44px;
+  font-weight: normal;
   line-height: 1.5;
   margin-bottom: 40px;
 }
@@ -176,6 +271,7 @@ body {
 .menu_box {
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
 }
 
 .menu_category {
@@ -189,8 +285,11 @@ body {
 .menu_item_heading {
   color: #d30202;
   font-size: 40px;
-  line-height: 1.5;
-  margin-top: 20px;
+  line-height: 1;
+  margin-bottom: 10px;
+  margin-top: -12px;
+  padding-left: 12px;
+  font-weight: normal;
 }
 
 .menu_item_text {
@@ -199,8 +298,6 @@ body {
 }
 
 .gallery_title {
-  max-width: 1000px;
-  font-size: 40px;
   margin: 0 auto;
   width: 240px;
   padding: 50px;
@@ -212,13 +309,14 @@ body {
 
 .gallery_photo {
   width: 30%;
-  margin-bottom: px;
+  /* margin-bottom: px; */
 }
 
 .event {
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 50px;
+  padding: 0 10px;
 }
 
 .event_title {
@@ -238,23 +336,29 @@ body {
 
 .event_list ul li {
   font-size: 18px;
-  margin-bottom: 18px;
+}
+
+.event_list ul li + li {
+  margin-top: 18px;
+}
+.event_list ul li time {
+  margin-right: 50px;
 }
 
 .event_list ul li a {
   text-decoration: underline;
 }
 
-.access {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .access_title {
-  font-size: 40px;
-  width: 150px;
+  width: 213px;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.access_map iframe {
+  display: block;
+  width: 100%;
+  height: 470px;
 }
 
 footer {
@@ -263,34 +367,35 @@ footer {
 
 .footer_box {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 10px;
 }
 
 .footer_title {
   width: 200px;
+  margin-right: 60px;
 }
 
 .footer_boxbox {
   font-size: 20px;
   line-height: 2;
-  padding-left: 80px;
 }
 
 .footer_flexbox p {
   margin-bottom: 20px;
 }
 
-.c {
+.footer_copy {
   font-size: 15px;
   line-height: 2;
   text-align: center;
-  padding: 80px;
+  padding-bottom: 80px;
 }
 
 .pagetop {
-  width: 100px;
+  width: 120px;
   position: fixed;
-  top: 350px;
+  bottom: 40px;
+  right: 40px;
 }
