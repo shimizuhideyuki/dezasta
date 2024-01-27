@@ -228,6 +228,7 @@ body {
 
 .about_box {
   width: 50%;
+  margin-bottom: 100px;
 }
 
 .about_photo {
@@ -272,6 +273,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
+  margin-bottom: 50px;
 }
 
 .menu_category {
@@ -305,6 +307,7 @@ body {
 
 .gallery_box {
   display: flex;
+  margin-bottom: 100px;
 }
 
 .gallery_photo {
@@ -315,7 +318,7 @@ body {
 .event {
   max-width: 1000px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding: 0 10px;
 }
 
