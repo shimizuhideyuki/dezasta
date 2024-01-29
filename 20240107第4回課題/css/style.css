@@ -383,6 +383,7 @@ footer {
 .footer_boxbox {
   font-size: 20px;
   line-height: 2;
+  color: #000;
 }
 
 .footer_flexbox p {
@@ -394,6 +395,7 @@ footer {
   line-height: 2;
   text-align: center;
   padding-bottom: 80px;
+  color: #000;
 }
 
 .pagetop {

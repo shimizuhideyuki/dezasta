@@ -86,7 +86,7 @@
                 </li>
                 <li class="menu_category">
                     <img class="menu_item_photo" src="images/pc_menu_sweets-100.jpg" alt="sweets">
-                    <h2 class="menu_item_heading">Sweets</h2>
+                    <h3 class="menu_item_heading">Sweets</h3>
                     <p class="menu_item_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </li>
             </ul>
@@ -147,7 +147,7 @@
     <footer>
         <div class="footer_box">
             <div class="footer_title">
-                <img class="footer_title" src="images/design_cafe_logo_footer@2x.png" alt="design cafe">
+                <img src="images/design_cafe_logo_footer@2x.png" alt="design cafe">
             </div>
             <p class="footer_boxbox">
                 OPEN 18:00 / CLOSE 24:00<br>
@@ -172,7 +172,7 @@
     </a>
     <script>
         $(function () {
-            $('.sp_btn').on('click', function () {
+            $('.sp_btn, .sp_nav li').on('click', function () {
                 $('.sp_nav').fadeToggle();
                 $('.sp_btn').toggleClass('open');
             });
