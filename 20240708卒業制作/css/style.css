@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style: none;
+  padding: 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+ul li {
+  padding: 0 30px;
+}
+
+.box {
+  border: 0px solid;
+  height: 5px;
+  margin-inline: auto;
+  max-width: 1366px;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 97, 97, 1),
+    rgba(233, 178, 45, 1) 20%,
+    rgba(192, 202, 75, 1) 34%,
+    rgba(53, 179, 56, 1) 58%,
+    rgba(86, 110, 243, 1) 79%,
+    rgba(154, 39, 238, 1)
+  );
+}
