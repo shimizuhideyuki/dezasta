@@ -109,45 +109,47 @@ ul li {
   padding: 0 30px;
 }
 
-.box {
+.linear-gradient {
   border: 0px solid;
   height: 5px;
   margin-inline: auto;
-  max-width: 1366px;
+  max-width: 1920px;
   width: auto;
   margin: 0px;
   padding: 0px;
 }
 
-.box {
+.linear-gradient {
   background: linear-gradient(
     90deg,
-    rgba(255, 97, 97, 1),
-    rgba(233, 178, 45, 1) 20%,
-    rgba(192, 202, 75, 1) 34%,
-    rgba(53, 179, 56, 1) 58%,
-    rgba(86, 110, 243, 1) 79%,
-    rgba(154, 39, 238, 1)
+    rgb(184, 97, 255),
+    rgb(145, 219, 247) 10%,
+    rgb(153, 245, 188) 30%,
+    rgb(241, 255, 82) 34%,
+    rgb(248, 251, 158) 58%,
+    rgb(244, 169, 119) 79%,
+    rgb(253, 156, 200) 89%
   );
 }
 
-.box2 {
+.linear-gradient2 {
   height: 8px;
   margin-inline: auto;
-  max-width: 1366px;
+  max-width: 1920px;
   width: auto;
-  margin: 32px;
+  margin: 30px 0 0 0;
   padding: 0px;
 }
 
-.box2 {
+.linear-gradient2 {
   background: linear-gradient(
     90deg,
-    rgba(255, 97, 97, 1),
-    rgba(233, 178, 45, 1) 20%,
-    rgba(192, 202, 75, 1) 34%,
-    rgba(53, 179, 56, 1) 58%,
-    rgba(86, 110, 243, 1) 79%,
-    rgba(154, 39, 238, 1)
+    rgb(184, 97, 255),
+    rgb(145, 219, 247) 10%,
+    rgb(153, 245, 188) 30%,
+    rgb(216, 223, 134) 34%,
+    rgb(248, 251, 158) 58%,
+    rgb(244, 169, 119) 79%,
+    rgb(253, 156, 200) 89%
   );
 }
