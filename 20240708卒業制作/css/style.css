@@ -106,7 +106,7 @@ ul {
 }
 
 ul li {
-  padding: 0 30px;
+  padding: 10px 0;
 }
 
 .linear-gradient {
@@ -152,4 +152,17 @@ ul li {
     rgb(244, 169, 119) 79%,
     rgb(253, 156, 200) 89%
   );
+}
+
+.category {
+  width: 200px;
+  line-height: 54px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  margin: 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
