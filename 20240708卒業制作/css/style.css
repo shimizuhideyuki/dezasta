@@ -109,6 +109,21 @@ ul li {
   padding: 10px 0;
 }
 
+.contact {
+  width: 114px;
+  height: 80px;
+  line-height: 40px;
+  background-color: #ff2083;
+  color: #ffffff;
+  font-size: 0.75rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+}
+#header .contact:hover {
+  background-color: #333;
+}
+
 .linear-gradient {
   border: 0px solid;
   height: 5px;
