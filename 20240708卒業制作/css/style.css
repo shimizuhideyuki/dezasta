@@ -337,3 +337,48 @@ img {
   letter-spacing: 0.1em;
   margin-top: 60px;
 }
+
+/* design */
+
+.design {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* display: flex; */
+}
+
+.design_title {
+  font-size: 29px;
+  margin-bottom: 70px;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+.design_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+.design_category {
+  width: 100%;
+}
+
+.design_item_photo {
+  border-radius: 0 39px 0 0;
+}
+
+.design_item_heading {
+  color: #ec12e1;
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 10px;
+  margin-top: -12px;
+  padding-left: 12px;
+  font-weight: normal;
+}
+
+.design_item_text {
+  font-size: 17px;
+  line-height: 1.47;
+}
