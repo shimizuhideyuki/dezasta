@@ -392,3 +392,43 @@ ul li {
   margin-top: 60px;
   text-align: center;
 }
+/*  ここまでデザイン */
+
+/* ここからご利用の流れ */
+
+.usageflow {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.usageflow_title {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.usageflow_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+.usageflow_category {
+  width: 20%;
+}
+
+.usageflow_item_heading {
+  color: #ff048a;
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 10px;
+  margin-top: -12px;
+  padding-left: 12px;
+  font-weight: normal;
+}
+
+.usageflow_item_text {
+  font-size: 17px;
+  line-height: 1.47;
+}
