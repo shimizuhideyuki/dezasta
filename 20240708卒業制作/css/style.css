@@ -378,7 +378,7 @@ ul li {
 }
 
 .design_category {
-  width: 100%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -390,4 +390,5 @@ ul li {
   font-weight: normal;
   letter-spacing: 0.1em;
   margin-top: 60px;
+  text-align: center;
 }
