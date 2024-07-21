@@ -268,9 +268,9 @@ ul li {
   right: -30px;
 }
 
-img {
+/* img {
   border: solid 15px #f5f5f5;
-}
+} */
 
 .service_title {
   font-size: 29px;
@@ -341,9 +341,8 @@ img {
 /* design */
 
 .design {
-  max-width: 1000px;
+  max-width: 600px;
   margin: 0 auto;
-  /* display: flex; */
 }
 
 .design_title {
@@ -362,23 +361,14 @@ img {
 
 .design_category {
   width: 100%;
+  display: flex;
 }
 
-.design_item_photo {
-  border-radius: 0 39px 0 0;
-}
-
-.design_item_heading {
-  color: #ec12e1;
-  font-size: 40px;
-  line-height: 1;
-  margin-bottom: 10px;
-  margin-top: -12px;
-  padding-left: 12px;
+.design_text {
+  font-size: 16px;
+  line-height: 45px;
+  margin-bottom: 50px;
   font-weight: normal;
-}
-
-.design_item_text {
-  font-size: 17px;
-  line-height: 1.47;
+  letter-spacing: 0.1em;
+  margin-top: 60px;
 }
