@@ -62,6 +62,7 @@ img {
   body {
   background-color: #fff;
 }
+
 .heager_wrap {
   position: absolute;
   top: 0;
@@ -69,7 +70,6 @@ img {
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 10px;
   padding-right: 7%;
@@ -80,7 +80,6 @@ img {
   width: 248px;
   margin: 35px;
   padding-left: 80px;
-  display: flex;
 }
 
 .pc_nav ul {
@@ -300,9 +299,9 @@ ul li {
   margin: 100px auto;
   justify-content: center;
 }
-/*  サービス2 */
+/*  合成サービス */
 
-.service2 {
+.combined {
   max-width: 1000px;
   justify-content: space-between;
   margin: 0 auto;
@@ -312,24 +311,24 @@ ul li {
   text-align: center;
 }
 
-.service2_box {
+.combined_box {
   width: 200%;
   margin-bottom: 100px;
   padding-right: 10px;
 }
 
-.service2_box {
+.combined_box {
   position: relative;
 }
 
-.service2_title {
+.combined_title {
   font-size: 29px;
   margin-bottom: 70px;
   letter-spacing: 0.12em;
   text-align: center;
 }
 
-.service2_text {
+.combined_text {
   font-size: 16px;
   line-height: 45px;
   margin-bottom: 50px;
@@ -338,10 +337,29 @@ ul li {
   margin-top: 60px;
 }
 
-/* design */
+.absolute2 {
+  position: absolute;
+  right: 900px;
+  bottom: 800px;
+  width: 10%;
+  border: none;
+}
+
+.before2 {
+  top: -16px;
+  left: 0%;
+}
+.after2 {
+  top: -12px;
+  right: -30px;
+}
+
+/*  ここまで合成サービス */
+
+/* ここからデザイン */
 
 .design {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -362,6 +380,7 @@ ul li {
 .design_category {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .design_text {
