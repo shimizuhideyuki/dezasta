@@ -14,12 +14,12 @@
 
 <body>
 
-    <header>
+    <header class="header">
 
+        <h1 class="header_logo">
+            <img src="images/img_logo.svg" alt="写真合成屋">
+        </h1>
         <div class="header_wrap">
-            <h1 class="header_logo">
-                <img src="images/img_logo.svg" alt="写真合成屋">
-            </h1>
             <nav class="pc_nav">
                 <ul>
                     <li><a href="">サービス</a></li>
@@ -41,24 +41,28 @@
 
                 </ul>
             </nav>
+            <a class="contact" href="#">
+                <span>
+                    CONTACT<br>
+                    お問合せ
+                </span>
+            </a>
         </div>
-        <a class="contact" href="#">
-            <span>
-                CONTACT<br>
-                お問合せ
-            </span>
-        </a>
     </header>
     <div class="header_slider">
         <div><img src="images/img_soccer_retouch_before_after.webp" alt="">
         </div>
+        <img class="header_slider_before" src="images/img_before_01.svg" alt="">
     </div>
     <div class="linear-gradient2"></div>
+
 
     <!-- カテゴリー -->
 
 
-    <main>
+    <main class="main">
+        <!-- グラデーションの縦ライン -->
+        <div class="vertical_line"></div>
         <div class="category">
             <span>CONCEPT</span>
         </div>
@@ -83,17 +87,17 @@
 
         <section id="service" class="service">
             <div class="service_box">
-                <img src="images/img_model_retouch_after.webp" alt="女性">
+                <div class="service_img_outer">
+                    <img class="service_img" src="images/img_model_retouch_after.webp" alt="女性">
+                    <img src="images/img_before.svg" class="before">
+                    <img src="images/img_after.svg" class="after">
+                </div>
                 <p class="service_text">
                     アイドル写真、芸能関係者様のレタッチなど多数行っております。<br>
                     細かな部分的修正から、全体の補正まで行っております。<br>
                     年間3,000枚以上のアプリゲーム画像加工、アイドルカード補正、<br>
                     美容画像加工、コンテスト画像、ブライダル画像加工を20年以上制作しております。
                 </p>
-                <div class="absolute">
-                    <img src="images/img_before.svg" class="before">
-                    <img src="images/img_after.svg" class="after">
-                </div>
 
 
                 <div class="button">

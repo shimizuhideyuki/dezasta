@@ -56,18 +56,19 @@ img {
   border: none;
 }
 
-ここから卒業制作 
+/* ここから卒業制作  */
 
-  /*ヘッダー*/
-  body {
+/*ヘッダー*/
+body {
   background-color: #fff;
 }
 
-.heager_wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_wrap {
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -78,8 +79,8 @@ img {
 
 .header_logo {
   width: 248px;
-  margin: 35px;
-  padding-left: 80px;
+  margin-top: 35px;
+  padding-left: 45px;
 }
 
 .pc_nav ul {
@@ -87,11 +88,10 @@ img {
 }
 
 .pc_nav ul li {
-  width: 105px;
-  margin-left: 55px;
+  margin-left: 35px;
   color: #000c;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
     "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
     "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -137,6 +137,22 @@ ul li {
   background-color: #333;
 }
 
+.header_slider {
+  position: relative;
+}
+.header_slider_before {
+  width: 170px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px rgba(35, 24, 21, 0.297);
+}
+
+.header_slider img {
+  border-top: 7px solid #000;
+  border-bottom: 7px solid #000;
+}
+
 .linear-gradient {
   border: 0px solid;
   height: 5px;
@@ -172,6 +188,28 @@ ul li {
 .linear-gradient2 {
   background: linear-gradient(
     90deg,
+    rgb(184, 97, 255),
+    rgb(145, 219, 247) 10%,
+    rgb(153, 245, 188) 30%,
+    rgb(216, 223, 134) 34%,
+    rgb(248, 251, 158) 58%,
+    rgb(244, 169, 119) 79%,
+    rgb(253, 156, 200) 89%
+  );
+}
+
+.main {
+  position: relative;
+}
+
+.vertical_line {
+  position: absolute;
+  top: 3%;
+  right: 82px;
+  width: 6px;
+  height: 90%;
+  background: linear-gradient(
+    0deg,
     rgb(184, 97, 255),
     rgb(145, 219, 247) 10%,
     rgb(153, 245, 188) 30%,
@@ -250,19 +288,23 @@ ul li {
   position: relative;
 }
 
-.absolute {
-  position: absolute;
-  right: 900px;
-  bottom: 800px;
-  width: 10%;
-  border: none;
+.service_img {
+  border: 15px solid #f5f5f5;
+}
+
+.service_img_outer {
+  position: relative;
 }
 
 .before {
+  position: absolute;
+  width: 110px;
   top: -16px;
   left: 0%;
 }
 .after {
+  position: absolute;
+  width: 110px;
   top: -12px;
   right: -30px;
 }
@@ -410,12 +452,31 @@ ul li {
 .usageflow_box {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 0 10px;
   margin-bottom: 50px;
 }
 
 .usageflow_category {
-  width: 30%;
+  width: 168px;
+  position: relative;
+}
+.usageflow_category::after {
+  content: "";
+  background-image: url(../images/img_arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  display: block;
+  top: 80px;
+  right: -20px;
+  font-weight: bold;
+}
+
+.usageflow_category:last-of-type::after {
+  content: none;
 }
 
 .usageflow_item_heading {
