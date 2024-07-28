@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #000;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+  font-weight: bold;
+
+  font-feature-settings: "palt";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ここから卒業制作  */
+
+/*ヘッダー*/
+body {
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_wrap {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 7%;
+  padding-left: 2.8%;
+}
+
+.header_logo {
+  width: 248px;
+  margin-top: 35px;
+  padding-left: 45px;
+  padding: 20px;
+}
+
+.pc_nav ul {
+  display: flex;
+}
+
+.pc_nav ul li {
+  margin-left: 35px;
+  color: #000c;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* スマホ版メニューは消す */
+.sp_nav {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .pc_nav {
+    display: none;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style: none;
+  max-width: 1366px;
+}
+
+ul li {
+  padding: 10px 0;
+}
+
+.contact {
+  width: 114px;
+  height: 80px;
+  line-height: 40px;
+  background-color: #ff2083;
+  color: #ffffff;
+  font-size: 0.75rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+}
+#header .contact:hover {
+  background-color: #333;
+}
+
+.header_slider {
+  position: relative;
+}
+.header_slider_before {
+  width: 170px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  box-shadow: 0 0 5px rgba(35, 24, 21, 0.297);
+}
+
+.header_slider_after {
+  width: 170px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  box-shadow: 0 0 5px rgba(35, 24, 21, 0.297);
+}
+
+.header_slider img {
+  border-top: 7px solid #000;
+  border-bottom: 7px solid #000;
+}
+
+.linear-gradient {
+  border: 0px solid;
+  height: 5px;
+  margin-inline: auto;
+  max-width: 1920px;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+.linear-gradient {
+  background: linear-gradient(
+    90deg,
+    rgb(184, 97, 255),
+    rgb(145, 219, 247) 10%,
+    rgb(153, 245, 188) 30%,
+    rgb(241, 255, 82) 34%,
+    rgb(248, 251, 158) 58%,
+    rgb(244, 169, 119) 79%,
+    rgb(253, 156, 200) 89%
+  );
+}
+
+.linear-gradient2 {
+  height: 8px;
+  margin-inline: auto;
+  max-width: 1920px;
+  width: auto;
+  margin: 30px 0 0 0;
+  padding: 0px;
+}
+
+.linear-gradient2 {
+  background: linear-gradient(
+    90deg,
+    rgb(184, 97, 255),
+    rgb(145, 219, 247) 10%,
+    rgb(153, 245, 188) 30%,
+    rgb(216, 223, 134) 34%,
+    rgb(248, 251, 158) 58%,
+    rgb(244, 169, 119) 79%,
+    rgb(253, 156, 200) 89%
+  );
+}
+
+.main {
+  position: relative;
+}
+
+.vertical_line {
+  position: absolute;
+  top: 3%;
+  right: 82px;
+  width: 6px;
+  height: 90%;
+  background: linear-gradient(
+    0deg,
+    rgb(184, 97, 255),
+    rgb(145, 219, 247) 10%,
+    rgb(153, 245, 188) 30%,
+    rgb(216, 223, 134) 34%,
+    rgb(248, 251, 158) 58%,
+    rgb(244, 169, 119) 79%,
+    rgb(253, 156, 200) 89%
+  );
+}
+
+/* コンセプト */
+
+.heading {
+  position: relative;
+  width: 200px;
+  line-height: 54px;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  margin: 100px auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+}
+
+.heading_icon.-left {
+  left: 0;
+}
+
+.heading_icon.-right {
+  right: 0;
+}
