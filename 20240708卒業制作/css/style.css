@@ -62,6 +62,23 @@
   position: relative;
 }
 
+.service_retouch {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(50%); */
+  transform: rotate(-90deg);
+  font-family: "Noto Serif JP", serif;
+  font-size: 52px;
+  color: #dfdfdf;
+}
+
+.service_retouch.-left {
+  left: -250px;
+}
+.service_retouch.-right {
+  right: -280px;
+}
+
 .before {
   position: absolute;
   width: 110px;
@@ -151,6 +168,23 @@
   font-weight: normal;
   letter-spacing: 0.1em;
   margin-top: 60px;
+}
+
+.combined_photo {
+  position: absolute;
+  top: 120%;
+  /* transform: translateY(50%); */
+  transform: rotate(-90deg);
+  font-family: "Noto Serif JP", serif;
+  font-size: 52px;
+  color: #dfdfdf;
+}
+
+.combined_photo.-left {
+  left: -280px;
+}
+.combined_photo.-right {
+  right: -1200px;
 }
 
 .absolute2 {
