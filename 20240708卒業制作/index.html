@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>写真合成屋</title>
     <meta name="description" content="写真合成屋">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
@@ -22,7 +28,7 @@
         <div class="header_wrap">
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="">サービス</a></li>
+                    <li><a href="service/combined.html">サービス</a></li>
                     <li><a href="">ご依頼の流れ</a></li>
                     <li><a href="">よくあるご質問</a></li>
                     <li><a href="">プロフィール</a></li>
@@ -63,9 +69,11 @@
     <main class="main">
         <!-- グラデーションの縦ライン -->
         <div class="vertical_line"></div>
-        <div class="category">
+        <h2 class="heading">
+            <img class="heading_icon -left" src="images/icon_heading.svg" alt="">
             <span>CONCEPT</span>
-        </div>
+            <img class="heading_icon -right" src="images/icon_heading.svg" alt="">
+        </h2>
         <div id="lead" class="lead">
             <p class="lead_title">GREAT IMAGE REPRESENTATION</p>
             <p class="lead_text">一人でも満足のいく写真合成、画像加工を全ての方に<br class="sp_only">
@@ -78,9 +86,14 @@
 
 
         <!-- サービス -->
-        <div class="category2">
+        <div class="heading2">
+            <img class="heading_icon -left" src="images/icon_heading.svg" alt="">
             <span>サービス</span>
+            <img class="heading_icon -right" src="images/icon_heading.svg" alt="">
         </div>
+
+
+
 
         <!-- レタッチ -->
         <p class="service_title">写真レタッチ</p>
@@ -91,6 +104,8 @@
                     <img class="service_img" src="images/img_model_retouch_after.webp" alt="女性">
                     <img src="images/img_before.svg" class="before">
                     <img src="images/img_after.svg" class="after">
+                    <div class="service_retouch -left">photo retouch</div>
+                    <div class="service_retouch -right">photo retouch</div>
                 </div>
                 <p class="service_text">
                     アイドル写真、芸能関係者様のレタッチなど多数行っております。<br>
@@ -101,6 +116,8 @@
 
 
                 <div class="button">
+
+
                     <span>
                         サンプルを見る
                     </span>
@@ -114,8 +131,8 @@
         <p class="combined_title">合成サービス</p>
 
         <section id="combined" class="combined">
-            <div class="combined_box">
-                <img src="images/img_model_combined_before.webp" alt="合成">
+            <div class="service_img_outer">
+                <img class="combined_img" src="images/img_model_combined_before.webp" alt="合成">
                 <div class="absolute2">
                     <img src="images/img_before.svg" class="before2">
                     <img src="images/img_after.svg" class="after2">
@@ -146,7 +163,8 @@
             <ul class="design_box">
                 <li class="design_category">
                     <img class="design_category_photo" src="images/img_design_flyer.webp" alt="flyer">
-                    <img class="design_category_photo" src="images/img_design_pamphlet.webp" alt="pamphlet">
+                    <img class="design_category_photo anime-fuwafuwa" src="images/img_design_pamphlet.webp"
+                        alt="pamphlet">
                     <img class="design_category_photo" src="images/img_design_web.webp" alt="web">
 
                 </li>
@@ -166,7 +184,7 @@
 
 
         <!-- ここまでデザイン -->
-        <div class="category">
+        <div class="heading">
             <span>ご利用の流れ</span>
         </div>
 

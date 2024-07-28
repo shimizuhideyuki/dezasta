@@ -222,7 +222,8 @@ ul li {
 
 /* コンセプト */
 
-.category {
+.heading {
+  position: relative;
   width: 200px;
   line-height: 54px;
   background-color: #000;
@@ -235,11 +236,27 @@ ul li {
   justify-content: center;
 }
 
+.heading_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+}
+
+.heading_icon.-left {
+  left: 0;
+}
+
+.heading_icon.-right {
+  right: 0;
+}
+
 .lead {
   max-width: 1000px;
   margin: 10px auto 0px;
   text-align: center;
 }
+
 .lead_title {
   font-size: 29px;
   margin-bottom: 70px;
@@ -255,7 +272,7 @@ ul li {
 
 /*  サービス */
 
-.category2 {
+.heading2 {
   width: 200px;
   line-height: 54px;
   background-color: #000;
@@ -353,6 +370,14 @@ ul li {
   text-align: center;
 }
 
+.combined_img {
+  border: 15px solid #f5f5f5;
+}
+
+.combined_img_outer {
+  position: relative;
+}
+
 .combined_box {
   width: 200%;
   margin-bottom: 100px;
@@ -419,7 +444,7 @@ ul li {
   margin-bottom: 50px;
 }
 
-.design_category {
+.design_heading {
   width: 30%;
   display: flex;
   justify-content: space-between;
@@ -457,11 +482,11 @@ ul li {
   margin-bottom: 50px;
 }
 
-.usageflow_category {
+.usageflow_heading {
   width: 168px;
   position: relative;
 }
-.usageflow_category::after {
+.usageflow_heading::after {
   content: "";
   background-image: url(../images/img_arrow.svg);
   background-size: contain;
@@ -475,7 +500,7 @@ ul li {
   font-weight: bold;
 }
 
-.usageflow_category:last-of-type::after {
+.usageflow_heading:last-of-type::after {
   content: none;
 }
 
