@@ -329,6 +329,9 @@
   font-size: 17px;
   line-height: 1.47;
 }
+/* ここまでご利用の流れ */
+
+/* ここからプロフィール */
 
 .profile {
   background-color: #f5f5f5;
@@ -352,6 +355,31 @@
   font-size: 14px;
   font-weight: normal;
 }
+
+.profile_box {
+  margin-left: 64px;
+}
+
 .profile_name {
-  padding: 0 auto;
+  font-size: 20px;
+  margin: 14px auto 20px;
+}
+.profile_text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.tel {
+  width: 361px;
+  margin: 20px auto 20px;
+  line-height: 50px;
+  background-color: #ff2083;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+}
+.address {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
 }
