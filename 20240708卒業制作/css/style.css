@@ -172,8 +172,8 @@
 
 .combined_photo {
   position: absolute;
-  top: 120%;
-  /* transform: translateY(50%); */
+  top: 237px;
+  transform: translateY(50%);
   transform: rotate(-90deg);
   font-family: "Noto Serif JP", serif;
   font-size: 52px;
@@ -181,27 +181,23 @@
 }
 
 .combined_photo.-left {
-  left: -800px;
+  left: -250px;
 }
 .combined_photo.-right {
-  right: -1200px;
-}
-
-.absolute2 {
-  position: absolute;
-  right: 900px;
-  bottom: 800px;
-  width: 10%;
-  border: none;
+  right: -250px;
 }
 
 .before2 {
   top: -16px;
   left: 0%;
+  position: absolute;
+  width: 100px;
 }
 .after2 {
   top: -12px;
   right: -30px;
+  position: absolute;
+  width: 100px;
 }
 
 /*  ここまで合成サービス */
@@ -228,7 +224,7 @@
 }
 
 .design_category {
-  width: 30%;
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -245,19 +241,22 @@
 
 .design_photo {
   position: absolute;
-  top: 74%;
+  top: 128px;
   /* transform: translateY(50%); */
   transform: rotate(-90deg);
   font-family: "Noto Serif JP", serif;
   font-size: 52px;
   color: #dfdfdf;
 }
-
-.combined_photo.-left {
-  left: 100px;
+.design_category_photo {
+  width: 30%;
 }
-.combined_photo.-right {
-  right: -1200px;
+
+.design_photo.-left {
+  left: -250px;
+}
+.design_photo.-right {
+  right: -250px;
 }
 
 /*  ここまでデザイン */
@@ -320,12 +319,27 @@
 }
 
 .usageflow_item_heading {
-  display: flex;
-  margin: 0 auto;
+  text-align: center;
+  margin: 50px auto 20px;
+
   font-weight: bold;
 }
 
 .usageflow_item_text {
   font-size: 17px;
   line-height: 1.47;
+}
+
+.profile {
+  background-color: #f5f5f5;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 96px 120px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.heading.-profile {
+  margin: 100px auto 0;
+  top: 26px;
 }
