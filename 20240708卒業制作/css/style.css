@@ -343,3 +343,15 @@
   margin: 100px auto 0;
   top: 26px;
 }
+
+.profile_images {
+  width: 339px;
+  margin-bottom: 10px;
+}
+.profile_image_text {
+  font-size: 14px;
+  font-weight: normal;
+}
+.profile_name {
+  padding: 0 auto;
+}
