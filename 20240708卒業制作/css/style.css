@@ -410,16 +410,17 @@
 }
 
 .instagram_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 375px;
-  line-height: 68px;
+  height: 68px;
   background-color: #000;
   color: #ffffff;
 }
 
 .instagram {
   width: 33px;
-  margin-left: 180px;
-  margin-bottom: 18px;
 }
 
 .mail_button {
@@ -432,7 +433,7 @@
 .mail {
   width: 33px;
   margin-left: 180px;
-  margin-bottom: 18px;
+  vertical-align: middle;
 }
 
 .foot {
