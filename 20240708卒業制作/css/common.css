@@ -61,6 +61,7 @@ img {
 /*ヘッダー*/
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .header {
@@ -214,9 +215,10 @@ ul li {
 .vertical_line {
   position: absolute;
   top: 3%;
-  right: 82px;
+  left: calc(50% + 630px);
   width: 6px;
   height: 90%;
+
   background: linear-gradient(
     0deg,
     rgb(184, 97, 255),
