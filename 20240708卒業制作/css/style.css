@@ -113,6 +113,7 @@
 }
 
 .button {
+  display: block;
   width: 276px;
   height: 49px;
   line-height: 50px;
@@ -370,6 +371,7 @@
   line-height: 32px;
 }
 .tel {
+  display: block;
   width: 361px;
   margin: 20px auto 20px;
   line-height: 50px;
@@ -424,16 +426,17 @@
 }
 
 .mail_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 375px;
-  line-height: 68px;
+  height: 68px;
   background-color: #000;
   color: #ffffff;
 }
 
 .mail {
   width: 33px;
-  margin-left: 180px;
-  vertical-align: middle;
 }
 
 .foot {
