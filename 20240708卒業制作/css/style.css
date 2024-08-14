@@ -320,9 +320,10 @@
 .usageflow_text {
   line-height: 32px;
   font-weight: normal;
+  text-align: justify;
 }
 
-.usageflow_category:last-of-type::after {
+.usageflow_category:last-of-type .usageflow_item_img::after {
   content: none;
 }
 
