@@ -36,10 +36,12 @@
 
 .service {
   max-width: 1000px;
-  justify-content: space-between;
   margin: 0 auto;
+}
+
+.service_inner {
+  justify-content: space-between;
   display: flex;
-  max-width: 1000px;
   margin: 10px auto 0px;
   text-align: center;
 }
