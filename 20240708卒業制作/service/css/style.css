@@ -10,3 +10,7 @@
 .combined_text + .combined_title {
   margin-top: 120px;
 }
+
+.combined_photo {
+  top: 43%;
+}
