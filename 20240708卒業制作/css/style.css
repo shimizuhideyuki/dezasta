@@ -132,9 +132,10 @@
 
 .combined {
   max-width: 1000px;
+  position: relative;
   justify-content: space-between;
   margin: 0 auto;
-  display: flex;
+  /* display: flex; */
   max-width: 1000px;
   margin: 10px auto 0px;
   text-align: center;
@@ -177,7 +178,7 @@
 
 .combined_photo {
   position: absolute;
-  top: 237px;
+  top: 50%;
   transform: translateY(50%);
   transform: rotate(-90deg);
   font-family: "Noto Serif JP", serif;
