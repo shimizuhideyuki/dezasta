@@ -58,6 +58,7 @@
 
 .service_img {
   border: 15px solid #f5f5f5;
+  box-sizing: border-box;
 }
 
 .service_img_outer {
@@ -141,6 +142,7 @@
 
 .combined_img {
   border: 15px solid #f5f5f5;
+  box-sizing: border-box;
 }
 
 .combined_img_outer {
