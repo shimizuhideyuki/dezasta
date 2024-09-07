@@ -418,14 +418,14 @@
   margin: 100px auto 63px;
 }
 
-.fot_button {
+.foot_btn {
   width: 800px;
   display: flex;
   justify-content: space-between;
   margin: 100px auto 20px;
 }
 
-.instagram_button {
+.instagram_btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,7 +439,7 @@
   width: 33px;
 }
 
-.mail_button {
+.mail_btn {
   display: flex;
   justify-content: center;
   align-items: center;
