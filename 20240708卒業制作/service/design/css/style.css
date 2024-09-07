@@ -26,9 +26,40 @@
 .design_lists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 100px 53px;
 }
 
 .design_list {
   height: 560px;
+  width: 268px;
   background: gray;
+  /* border: solid rgb(255, 255, 255); */
+}
+
+.design_item_heading {
+  /* text-align: center; */
+  margin: 50px auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.design_item_text {
+  line-height: 32px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.btn {
+  display: block;
+  width: 198px;
+  height: 49px;
+  line-height: 50px;
+  background-color: #ff2083;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 25px;
+  margin: 30px auto;
+  justify-content: center;
 }
