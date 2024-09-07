@@ -32,7 +32,7 @@
 .design_list {
   height: 560px;
   width: 268px;
-  background: gray;
+  background: white;
   /* border: solid rgb(255, 255, 255); */
 }
 
@@ -62,11 +62,4 @@
   border-radius: 25px;
   margin: 47px auto;
   justify-content: center;
-}
-
-.design_list2 {
-  height: 560px;
-  width: 268px;
-  background: gray;
-  /* border: solid rgb(255, 255, 255); */
 }
