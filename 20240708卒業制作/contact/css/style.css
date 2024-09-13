@@ -18,6 +18,12 @@
   width: 9%;
 }
 
+.contact_label {
+  padding: 5px 10px;
+  background-color: #c33;
+  color: #fff;
+}
+
 .contact_input {
   width: 55.4%;
 }
