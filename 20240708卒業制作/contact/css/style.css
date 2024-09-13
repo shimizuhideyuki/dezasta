@@ -1,11 +1,23 @@
 @charset "utf-8";
 
-.header_contact {
-  height: 20px;
-  border: none;
+#contact {
+  max-width: 1000px;
+  margin: 40px auto;
 }
 
-.header_contact_images {
-  height: 20px;
-  border: none;
+.contact_group {
+  display: flex;
+  padding: 30px 60px;
+  border-top: 1px solid #aaaaaa;
+}
+.contact_title {
+  width: 19%;
+}
+
+.contact_require {
+  width: 9%;
+}
+
+.contact_input {
+  width: 55.4%;
 }
