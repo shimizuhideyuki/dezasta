@@ -7,6 +7,7 @@
 
 .contact_group {
   display: flex;
+  align-items: center;
   padding: 30px 60px;
   border-top: 1px solid #aaaaaa;
 }
@@ -16,6 +17,7 @@
 
 .contact_require {
   width: 9%;
+  text-align: center;
 }
 
 .contact_label {
@@ -26,4 +28,10 @@
 
 .contact_input {
   width: 55.4%;
+  border: 1px solid #a0a0a0;
+  padding: 15px;
+}
+
+.contact_input_-textarea {
+  height: 273px;
 }
