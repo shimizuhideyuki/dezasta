@@ -41,3 +41,10 @@
 .contact_input_-textarea {
   height: 273px;
 }
+
+.contact_input.-textarea {
+  height: 273px;
+}
+
+.submit {
+}
