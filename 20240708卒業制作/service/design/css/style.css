@@ -2,7 +2,7 @@
 
 .design {
   position: relative;
-  max-width: 1000px;
+  max-width: 914px;
   margin: 10px auto 0px;
 }
 
@@ -30,7 +30,8 @@
 }
 
 .design_list {
-  width: 268px;
+  /* height: 560px;
+  width: 268px; */
   background: white;
   /* border: solid rgb(255, 255, 255); */
 }
