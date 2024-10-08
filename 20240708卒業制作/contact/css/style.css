@@ -26,6 +26,12 @@
   color: #fff;
 }
 
+.contact_label_2 {
+  padding: 5px 10px;
+  background-color: #a0a0a0;
+  color: #fff;
+}
+
 .contact_input {
   width: 55.4%;
   border: 1px solid #a0a0a0;
