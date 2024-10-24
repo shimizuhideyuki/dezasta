@@ -53,12 +53,12 @@
 .button {
   display: block;
   width: 198px;
-  height: 35px;
+  padding: 10px 0;
   background-color: #ff2083;
   color: #ffffff;
   font-size: 20px;
   text-align: center;
   border-radius: 25px;
   margin: 100px auto;
-  justify-content: center;
+  border: none;
 }
