@@ -17,7 +17,10 @@
 
 .contact_require {
   width: 9%;
+  min-width: 72px;
   text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .contact_label {
