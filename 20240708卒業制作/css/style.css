@@ -502,3 +502,8 @@ dd {
 .faq_text {
   font-weight: lighter;
 }
+
+.faq {
+  max-width: 914px;
+  margin: 0 auto;
+}
