@@ -503,7 +503,14 @@ dd {
   font-weight: lighter;
 }
 
-.faq {
+.privacypolicy_list {
+  line-height: 100px;
+}
+
+.privacypolicy_text {
   max-width: 914px;
   margin: 0 auto;
+  letter-spacing: 0.12em;
+  line-height: 32px;
+  font-weight: normal;
 }
