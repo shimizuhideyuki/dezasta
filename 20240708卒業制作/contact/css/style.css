@@ -11,6 +11,11 @@
   padding: 30px 60px;
   border-top: 1px solid #aaaaaa;
 }
+
+.contact_group:last-of-type {
+  border-bottom: 1px solid#aaaaaa;
+}
+
 .contact_title {
   width: 19%;
 }
@@ -50,7 +55,9 @@
 }
 
 .checkbox {
+  display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .button {
@@ -62,6 +69,6 @@
   font-size: 20px;
   text-align: center;
   border-radius: 25px;
-  margin: 100px auto;
+  margin: 20px auto;
   border: none;
 }
