@@ -115,7 +115,6 @@ body {
 
 ul {
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
   list-style: none;
   max-width: 1366px;
@@ -466,5 +465,7 @@ a {
 
 .privacy .heading{
 width: 280px ;
+
+
 
 }
