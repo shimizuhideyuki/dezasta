@@ -503,6 +503,11 @@ dd {
   font-weight: lighter;
 }
 
+.privacypolicy {
+  max-width: 914px;
+  margin: 0 auto;
+}
+
 .privacypolicy_list {
   line-height: 100wpx;
 }
