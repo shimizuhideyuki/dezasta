@@ -518,4 +518,5 @@ dd {
   letter-spacing: 0.12em;
   line-height: 32px;
   font-weight: normal;
+  text-align: justify;
 }
