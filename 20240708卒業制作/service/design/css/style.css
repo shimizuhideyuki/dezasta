@@ -76,3 +76,14 @@
   letter-spacing: 0.12em;
   text-align: center;
 }
+
+
+/* スライダーの調整 */
+.slick-prev:before, .slick-next:before{
+  color:#000
+}
+
+/* .slick-prev {
+left: 10px
+z-index: 2;
+} */
