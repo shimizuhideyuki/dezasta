@@ -508,7 +508,7 @@ z-index: 99;
 
 .foot_btn {
   max-width: 800px;
-  display: flex;
+  display: block;
   justify-content: space-between;
   margin: 100px auto 20px;
 }
@@ -544,7 +544,7 @@ z-index: 99;
 .foot {
   width: 565px;
   justify-content: space-between;
-  display: flex;
+  display: block;
   margin: 67px auto 67px;
 }
 
