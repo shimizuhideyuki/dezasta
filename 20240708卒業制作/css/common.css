@@ -300,7 +300,7 @@ a {
 
 
 @media screen and (max-width: 767px) {
-  .pc_nav {
+  .vertical_line {
     display: none;
   }
 }

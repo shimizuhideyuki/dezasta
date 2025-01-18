@@ -146,6 +146,14 @@ z-index: 99;
   right: -260px;
 }
 
+@media screen and (max-width: 767px) {
+  .service_retouch {
+    display: none;
+  }
+}
+
+
+
 .before {
   position: absolute;
   width: 110px;
@@ -211,6 +219,7 @@ z-index: 99;
   box-sizing: border-box;
 }
 
+
 .combined_img_outer {
   position: relative;
 }
@@ -257,6 +266,13 @@ z-index: 99;
 .combined_photo.-right {
   right: -299px;
 }
+
+@media screen and (max-width: 767px) {
+  .combined_photo {
+    display: none;
+  }
+}
+
 
 .before2 {
   top: -16px;
@@ -329,6 +345,14 @@ z-index: 99;
 .design_photo.-right {
   right: -139px;
 }
+
+@media screen and (max-width: 767px) {
+  .design_photo {
+    display: none;
+  }
+}
+
+
 
 /*  ここまでデザイン */
 
