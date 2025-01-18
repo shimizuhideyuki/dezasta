@@ -134,6 +134,7 @@ ul {
   display: inline-block;
   text-align: center;
   border-radius: 10px;
+  margin-left: 30px;
 }
 #header .contact:hover {
   background-color: #333;
