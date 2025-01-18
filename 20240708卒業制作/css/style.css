@@ -414,7 +414,7 @@ z-index: 99;
 
 .profile {
   background-color: #f5f5f5;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 96px 120px;
   box-sizing: border-box;
@@ -483,7 +483,7 @@ z-index: 99;
 }
 
 .foot_btn {
-  width: 800px;
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
   margin: 100px auto 20px;

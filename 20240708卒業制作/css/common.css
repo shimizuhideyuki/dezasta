@@ -298,6 +298,15 @@ a {
   color: hotpink;
 }
 
+
+@media screen and (max-width: 767px) {
+  .pc_nav {
+    display: none;
+  }
+}
+
+
+
 /* ul {
 	padding: 0;
 	list-style: none;
