@@ -467,6 +467,7 @@ a {
   width: 33px;
 }
 
+
 .foot {
   max-width: 565px;
   justify-content: space-between;
@@ -490,5 +491,12 @@ a {
 width: 280px ;
 
 
+@media screen and (max-width: 767px) {
+.foot {
+  max-width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+}
 
 }

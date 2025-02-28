@@ -177,7 +177,7 @@ z-index: 99;
   position: absolute;
   width: 110px;
   top: -12px;
-  right: -30px;
+  right: 0;
 }
 
 /* img {
@@ -295,7 +295,7 @@ z-index: 99;
 }
 .after2 {
   top: -12px;
-  right: -30px;
+  right: 0;
   position: absolute;
   width: 100px;
 }
@@ -545,6 +545,8 @@ z-index: 99;
   margin: 100px auto 20px;
 }
 
+
+
 .instagram_btn {
   display: flex;
   justify-content: center;
@@ -677,4 +679,12 @@ dd {
 
 .horizontal_scroll img {
   vertical-align: bottom; }
+
+
+  .foot_btn {
+    display:flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 100px auto 20px;
+  }
 
