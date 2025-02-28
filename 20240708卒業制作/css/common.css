@@ -489,14 +489,15 @@ a {
 
 .privacy .heading{
 width: 280px ;
+}
 
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
 .foot {
-  max-width: 100%;
+  text-align: center;
+  max-width: 565px;
   justify-content: space-between;
   display: flex;
+  margin: 67px auto 67px;
 }
 }
 
-}
