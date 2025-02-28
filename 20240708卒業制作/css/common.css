@@ -468,7 +468,7 @@ a {
 }
 
 .foot {
-  width: 565px;
+  max-width: 565px;
   justify-content: space-between;
   display: flex;
   margin: 67px auto 67px;

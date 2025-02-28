@@ -449,11 +449,12 @@ z-index: 99;
   .usageflow_box {
     overflow-x: scroll;
   }
-  .usageflow_category {
-    min-width: 67%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
+    .usageflow_category {
+      min-width: 67%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
   .usageflow_item_img {
  width: 40%;
  margin: 0 auto;
@@ -503,7 +504,7 @@ z-index: 99;
 }
 .tel {
   display: block;
-  width: 361px;
+  max-width: 361px;
   margin: 20px auto 20px;
   line-height: 50px;
   background-color: #ff2083;
