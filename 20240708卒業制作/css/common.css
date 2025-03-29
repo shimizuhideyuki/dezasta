@@ -170,9 +170,6 @@ body {
   padding: 0px;
 }
 
-
-
-
 .linear-gradient {
   background: linear-gradient(
     90deg,
@@ -238,9 +235,6 @@ body {
   }
 }
 
-
-
-
 ul {
   padding: 0;
   list-style: none;
@@ -250,7 +244,6 @@ a {
   color: #333;
   text-decoration: none;
 }
-
 
 /* ドロップダウン */
 .list {
@@ -467,7 +460,6 @@ a {
   width: 33px;
 }
 
-
 .foot {
   max-width: 565px;
   justify-content: space-between;
@@ -487,17 +479,22 @@ a {
   border-top: 1px solid #a1a1a2;
 }
 
-.privacy .heading{
-width: 280px ;
+.privacy .heading {
+  width: 280px;
 }
 
 @media screen and (min-width: 768px) {
-.foot {
-  text-align: center;
-  max-width: 565px;
-  justify-content: space-between;
-  display: flex;
-  margin: 67px auto 67px;
-}
+  .foot {
+    text-align: center;
+    max-width: 565px;
+    justify-content: space-between;
+    display: flex;
+    margin: 67px auto 67px;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .footer_line {
+  display: none;
+  }
+}
