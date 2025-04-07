@@ -138,7 +138,7 @@ body {
     width: 33px;
     height: 3px;
     border-radius: 2px;
-    background: #fff;
+    background: #000;
     transition: 0.3s;
   }
   .sp_btn span::before,
@@ -149,7 +149,7 @@ body {
     width: 33px;
     height: 3px;
     border-radius: 2px;
-    background: #fff;
+    background: #000;
     transition: 0.3s;
   }
 }

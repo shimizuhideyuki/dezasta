@@ -9,9 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -63,7 +67,17 @@
                     お問合せ
                 </span>
             </a>
+            <div class="sp_btn"><span></span></div>
         </div>
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="">サービス</a></li>
+                <li><a href="">ご依頼の流れ</a></li>
+                <li><a href="">よくあるご質問</a></li>
+                <li><a href="">プロフィール</a></li>
+                <li><a href="">03-6416-4202</a></li>
+            </ul>
+        </nav>
 
 
 
@@ -88,17 +102,7 @@
     
                     </ul>
                 </nav>
-                <nav class="sp_nav">
-                    <ul>
-                        <li><a href="">サービス</a></li>
-                        <li><a href="">ご依頼の流れ</a></li>
-                        <li><a href="">よくあるご質問</a></li>
-                        <li><a href="">プロフィール</a></li>
-                        <li><a href="">03-6416-4202</a></li>
-    
-    
-                    </ul>
-                </nav>
+ 
                 <a class="contact" href="#">
                     <span>
                         CONTACT<br>
@@ -162,10 +166,28 @@
     </header>
 
     <div class="header_slider">
-        <div><img class="header_slider_images" src="images/img_soccer_retouch_before_after.webp" alt="">
+        <div class="header_slick">
+            <div>
+                <picture>
+                    <source srcset="images/img_soccer_retouch_before_after_sp.webp" media="(max-width:767px)">
+                    <img class="header_slider_images" src="images/img_soccer_retouch_before_after.webp" alt="レタッチサンプル">
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="images/img_soccer_retouch_before_after_sp.webp" media="(max-width:767px)">
+                    <img class="header_slider_images" src="images/img_soccer_retouch_before_after.webp" alt="レタッチサンプル">
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="images/img_soccer_retouch_before_after_sp.webp" media="(max-width:767px)">
+                    <img class="header_slider_images" src="images/img_soccer_retouch_before_after.webp" alt="レタッチサンプル">
+                </picture>
+            </div>
         </div>
-        <img class="header_slider_before" src="images/img_before_01.svg" alt="">
-        <img class="header_slider_after" src="images/img_after_01.svg" alt="">
+        <img class="header_slider_before" src="images/img_before_01.svg" alt="BEFORE">
+        <img class="header_slider_after" src="images/img_after_01.svg" alt="AFTER">
     </div>
     <div class="linear-gradient2"></div>
 
@@ -434,24 +456,29 @@
 
         <div class="linear-gradient"></div>
     </footer>
+
     <script>
         $(function () {
             // タイマー機能
-            // console.log("OK");
             setTimeout(function () {
                 // ページが読み込まれて3秒後にここに記述された処理が発動します。
                 $('.loading').fadeOut();
-
             }, 2000);
 
+            // ハンバーガー
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+
+            // スライダー
+            $('.header_slick').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                // fade:true,
+            });
         });
-
-
     </script>
-
-
-
-
 </body>
 
 </html>
