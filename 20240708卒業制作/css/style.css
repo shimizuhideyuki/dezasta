@@ -370,6 +370,9 @@
   color: #ff048a;
 }
 
+#usageflow {
+  scroll-margin-top: 60px;
+}
 .usageflow {
   min-width: 295px;
   margin: 0 auto;
@@ -435,6 +438,11 @@
   font-size: 17px;
   line-height: 1.47;
 }
+
+#profile {
+  scroll-margin-top: 90px;
+}
+
 .profile_outer {
   width: 998px;
   margin: 0 auto;

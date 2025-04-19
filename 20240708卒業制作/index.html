@@ -25,7 +25,7 @@
                 <div class="loader"></div>
                 Now Loading...
             </div>
-            <div class="loading_logo"><img src="images/img_logo.svg" alt="写真合成屋"></div>
+            <div class="loading_logo"><img src="./images/img_logo.svg" alt="写真合成屋"></div>
         </div>
     </div>
 
@@ -37,7 +37,7 @@
     <header class="header">
 
         <h1 class="header_logo">
-            <img src="images/img_logo.svg" alt="写真合成屋">
+            <img src="./images/img_logo.svg" alt="写真合成屋">
         </h1>
         <div class="header_wrap">
             <nav class="pc_nav">
@@ -45,19 +45,19 @@
                     <li class="header_list">
                         <div class="link link-hover">サービス<div class="dropDown">
                                 <ul class="dropDown__list">
-                                    <li class="dropDown__item"><a href="service/retouch.html"
+                                    <li class="dropDown__item"><a href="./service/retouch.html"
                                             class="dropDown__link">写真レタッチ</a></li>
-                                    <li class="dropDown__item"><a href="service/combined.html"
+                                    <li class="dropDown__item"><a href="./service/combined.html"
                                             class="dropDown__link">写真合成</a></li>
-                                    <li class="dropDown__item"><a href="service/design/index.html/"
+                                    <li class="dropDown__item"><a href="./service/design/index.html"
                                             class="dropDown__link">デザイン</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
-                    <li><a href="">ご依頼の流れ</a></li>
+                    <li><a href="#usageflow">ご依頼の流れ</a></li>
                     <li><a href="">よくあるご質問</a></li>
-                    <li><a href="">プロフィール</a></li>
+                    <li><a href="#profile">プロフィール</a></li>
                     <li><a href="">03-6416-4202</a></li>
                 </ul>
             </nav>
@@ -89,7 +89,7 @@
         <!-- <header class="header">
 
             <h1 class="header_logo">
-                <img src="images/img_logo.svg" alt="写真合成屋">
+                <img src="./images/img_logo.svg" alt="写真合成屋">
             </h1>
             <div class="header_wrap">
                 <nav class="pc_nav">
@@ -170,39 +170,40 @@
             <div>
                 <picture>
                     <source srcset="images/img_soccer_retouch_before_after_sp.webp" media="(max-width:767px)">
-                    <img class="header_slider_images" src="images/img_soccer_retouch_before_after.webp" alt="レタッチサンプル">
+                    <img class="header_slider_images" src="./images/img_soccer_retouch_before_after.webp"
+                        alt="レタッチサンプル">
                 </picture>
             </div>
             <div>
                 <picture>
                     <source srcset="images/img_soccer_retouch_before_after_sp.webp" media="(max-width:767px)">
-                    <img class="header_slider_images" src="images/img_soccer_retouch_before_after.webp" alt="レタッチサンプル">
+                    <img class="header_slider_images" src="./images/img_soccer_retouch_before_after.webp"
+                        alt="レタッチサンプル">
                 </picture>
             </div>
             <div>
                 <picture>
                     <source srcset="images/img_soccer_retouch_before_after_sp.webp" media="(max-width:767px)">
-                    <img class="header_slider_images" src="images/img_soccer_retouch_before_after.webp" alt="レタッチサンプル">
+                    <img class="header_slider_images" src="./images/img_soccer_retouch_before_after.webp"
+                        alt="レタッチサンプル">
                 </picture>
             </div>
         </div>
-        <img class="header_slider_before" src="images/img_before_01.svg" alt="BEFORE">
-        <img class="header_slider_after" src="images/img_after_01.svg" alt="AFTER">
+        <img class="header_slider_before" src="./images/img_before_01.svg" alt="BEFORE">
+        <img class="header_slider_after" src="./images/img_after_01.svg" alt="AFTER">
     </div>
     <div class="linear-gradient2"></div>
 
-
     <!-- カテゴリー -->
-
-
     <main class="main">
         <div class="vertical_line"></div>
-        <h2 class="heading">
-            <img class="heading_icon -left" src="images/icon_heading.svg" alt="">
-            <span>CONCEPT</span>
-            <img class="heading_icon -right" src="images/icon_heading.svg" alt="">
-        </h2>
-        <div id="lead" class="lead">
+
+        <section id="lead" class="lead">
+            <h2 class="heading">
+                <img class="heading_icon -left" src="./images/icon_heading.svg" alt="">
+                <span>CONCEPT</span>
+                <img class="heading_icon -right" src="./images/icon_heading.svg" alt="">
+            </h2>
             <p class="lead_title">GREAT IMAGE REPRESENTATION</p>
             <p class="lead_text">一人でも満足のいく写真合成、画像加工を全ての方に<br class="sp_only">
                 他社でお断りされたような自然な写真合成、躍動感のある写真合成お任せください。<br>
@@ -210,161 +211,147 @@
                 年間3,000枚以上のアプリゲーム画像加工、アイドルカード補正、<br>
                 美容画像加工、コンテスト画像、ブライダル画像加工を20年以上制作しております。
             </p>
-        </div>
-
+        </section>
 
         <!-- サービス -->
-        <div class="heading">
-            <img class="heading_icon -left" src="images/icon_heading.svg" alt="">
-            <span>サービス</span>
-            <img class="heading_icon -right" src="images/icon_heading.svg" alt="">
-        </div>
+        <section id="service">
+            <h2 class="heading">
+                <img class="heading_icon -left" src="./images/icon_heading.svg" alt="">
+                <span>サービス</span>
+                <img class="heading_icon -right" src="./images/icon_heading.svg" alt="">
+            </h2>
+
+            <!-- ここからレタッチ -->
+            <section class="service">
+
+                <!-- レタッチ -->
+                <h3 class="service_title">写真レタッチ</h3>
+
+                <div class="service_inner">
+                    <div class="service_box">
+                        <div class="service_img_outer">
+                            <img class="service_img" src="./images/img_model_retouch_after.webp" alt="女性">
+                            <img src="./images/img_before.svg" class="before" alt="矢印">
+                            <img src="./images/img_after.svg" class="after" alt="矢印">
+                            <div class="service_retouch -left">photo retouch</div>
+                            <div class="service_retouch -right">photo retouch</div>
+
+                        </div>
+                        <p class="service_text">
+                            アイドル写真、芸能関係者様のレタッチなど多数行っております。<br>
+                            細かな部分的修正から、全体の補正まで行っております。<br>
+                            年間3,000枚以上のアプリゲーム画像加工、アイドルカード補正、<br>
+                            美容画像加工、コンテスト画像、ブライダル画像加工を20年以上制作しております。
+                        </p>
 
 
-        <section id="service" class="service">
+                        <a class="btn">
 
-            <!-- レタッチ -->
-            <h3 class="service_title">写真レタッチ</h3>
 
-            <div class="service_inner">
-                <div class="service_box">
-                    <div class="service_img_outer">
-                        <img class="service_img" src="images/img_model_retouch_after.webp" alt="女性">
-                        <img src="images/img_before.svg" class="before" alt="矢印">
-                        <img src="images/img_after.svg" class="after" alt="矢印">
-                        <div class="service_retouch -left">photo retouch</div>
-                        <div class="service_retouch -right">photo retouch</div>
+                            <span>
+                                サンプルを見る
+                            </span>
+
+                        </a>
 
                     </div>
-                    <p class="service_text">
-                        アイドル写真、芸能関係者様のレタッチなど多数行っております。<br>
-                        細かな部分的修正から、全体の補正まで行っております。<br>
-                        年間3,000枚以上のアプリゲーム画像加工、アイドルカード補正、<br>
-                        美容画像加工、コンテスト画像、ブライダル画像加工を20年以上制作しております。
-                    </p>
+                </div>
+            </section>
 
-
-                    <a class="btn">
-
-
-                        <span>
-                            サンプルを見る
-                        </span>
-
-                    </a>
+            <!-- ここから合成サービス -->
+            <section id="combined" class="combined">
+                <h3 class="combined_title">合成サービス</h3>
+                <div class="service_img_outer">
+                    <img class="combined_img" src="./images/img_model_combined_before.webp" alt="合成">
+                    <img src="./images/img_before.svg" class="before2" alt="矢印">
+                    <img src="./images/img_after.svg" class="after2" alt="矢印">
+                    <div class="combined_photo -left">combined photo</div>
+                    <div class="combined_photo -right">combined photo</div>
 
                 </div>
-            </div>
-        </section>
 
-        <!-- ここから合成サービス -->
+                <p class="combined_text">
+                    一人でも満足のいく写真合成、画像加工を全ての方に<br>
+                    他社でお断りされたような自然な写真合成、躍動感のある写真合成お任せください。<br>
+                    アプリの簡単な合成ではなく本物の写真合成にこだわり20年<br>
+                    年間3,000枚以上のアプリゲーム画像加工、アイドルカード補正<br>
 
-        <p class="combined_title">合成サービス</p>
+                </p>
 
-        <section id="combined" class="combined">
-            <div class="service_img_outer">
-                <img class="combined_img" src="images/img_model_combined_before.webp" alt="合成">
-                <img src="images/img_before.svg" class="before2" alt="矢印">
-                <img src="images/img_after.svg" class="after2" alt="矢印">
-                <div class="combined_photo -left">combined photo</div>
-                <div class="combined_photo -right">combined photo</div>
-
-            </div>
-
-            <p class="combined_text">
-                一人でも満足のいく写真合成、画像加工を全ての方に<br>
-                他社でお断りされたような自然な写真合成、躍動感のある写真合成お任せください。<br>
-                アプリの簡単な合成ではなく本物の写真合成にこだわり20年<br>
-                年間3,000枚以上のアプリゲーム画像加工、アイドルカード補正<br>
-
-            </p>
-
-            <a class="btn">
-                <span>
-                    サンプルを見る
-                </span>
-            </a>
+                <a class="btn">
+                    <span>
+                        サンプルを見る
+                    </span>
+                </a>
 
 
-            <!-- ここまで合成サービス -->
+                <!-- ここまで合成サービス -->
 
 
-        </section>
+            </section>
 
-        <!-- ここからデザイン -->
-        <p class="design_title">デザイン</p>
+            <!-- ここからデザイン -->
+            <section id="design" class="design">
+                <h3 class="design_title">デザイン</h3>
+                <ul class="design_box">
+                    <li class="design_category">
+                        <img class="design_category_photo" src="./images/img_design_flyer.webp" alt="flyer">
+                        <img class="design_category_photo anime-fuwafuwa" src="./images/img_design_pamphlet.webp"
+                            alt="pamphlet">
+                        <img class="design_category_photo" src="./images/img_design_web.webp" alt="web">
+                        <div class="design_photo -left">design</div>
+                        <div class="design_photo -right">design</div>
 
-        <section id="design" class="design">
-            <ul class="design_box">
-                <li class="design_category">
-                    <img class="design_category_photo" src="images/img_design_flyer.webp" alt="flyer">
-                    <img class="design_category_photo anime-fuwafuwa" src="images/img_design_pamphlet.webp"
-                        alt="pamphlet">
-                    <img class="design_category_photo" src="images/img_design_web.webp" alt="web">
-                    <div class="design_photo -left">design</div>
-                    <div class="design_photo -right">design</div>
-
-                </li>
-            </ul>
-            <p class="design_text">
-                写真レタッチや合成以外にもスマホカードデザイン、<br>
-                グラフィックデザイン、広告、動画制作、3Dも多数制作しております。<br>
-                是非お問合せください。</p>
+                    </li>
+                </ul>
+                <p class="design_text">
+                    写真レタッチや合成以外にもスマホカードデザイン、<br>
+                    グラフィックデザイン、広告、動画制作、3Dも多数制作しております。<br>
+                    是非お問合せください。</p>
 
 
-            <a class="btn">
-                <span>
-                    サンプルを見る
-                </span>
-            </a>
+                <a class="btn">
+                    <span>
+                        サンプルを見る
+                    </span>
+                </a>
+
+            </section>
 
         </section>
-
 
         <!-- ここまでデザイン -->
-        <div class="heading">
-            <div class="heading">
-                <img class="heading_icon -left" src="images/icon_heading.svg" alt="">
-                <span>ご利用の流れ</span>
-                <img class="heading_icon -right" src="images/icon_heading.svg" alt="">
-            </div>
-
-        </div>
-
-        <!-- ここからご利用の流れ -->
-        <div class="article">
-            <!-- <div class="article">STEP01 </div>
-            <div class="article">STEP02 </div>
-            <div class="article">STEP03 </div>
-            <div class="article">STEP04 </div>
-            <div class="article">STEP05 </div> -->
-        </div>
-
+        <!--ここからご依頼の流れ -->
         <section id="usageflow" class="usageflow">
+            <h2 class="heading">
+                <img class="heading_icon -left" src="./images/icon_heading.svg" alt="">
+                <span>ご依頼の流れ</span>
+                <img class="heading_icon -right" src="./images/icon_heading.svg" alt="">
+            </h2>
             <ul class="usageflow_box">
                 <li class="usageflow_category">
-                    <div class="usageflow_item_img"><img class="usageflow_photo" src="images/img_contact.svg"
+                    <div class="usageflow_item_img"><img class="usageflow_photo" src="./images/img_contact.svg"
                             alt="STEP01"></div>
                     <h3 class="usageflow_item_heading">お問合せ</h3>
                     <p class="usageflow_text">お問い合わせフォームより必要事項をご記入の上、お問い合わせください。</p>
                 </li>
 
                 <li class="usageflow_category">
-                    <div class="usageflow_item_img"><img class="usageflow_item_photo" src="images/img_estimate.svg"
+                    <div class="usageflow_item_img"><img class="usageflow_item_photo" src="./images/img_estimate.svg"
                             alt="STEP02"></div>
                     <h3 class="usageflow_item_heading">お見積</h3>
                     <p class="usageflow_text">作業内容を確認させていただき、メールにて金額と納期のお見積を差し上げます。</p>
                 </li>
 
                 <li class="usageflow_category">
-                    <div class="usageflow_item_img"><img class="usageflow_item_photo" src="images/img_production.svg"
+                    <div class="usageflow_item_img"><img class="usageflow_item_photo" src="./images/img_production.svg"
                             alt="STEP03"></div>
                     <h3 class="usageflow_item_heading">制作</h3>
                     <p class="usageflow_text">ご依頼内容に沿って、丁寧かつスピーディーにレタッチ作業を⾏います。</p>
                 </li>
 
                 <li class="usageflow_category">
-                    <div class="usageflow_item_img"><img class="usageflow_item_photo" src="images/img_delivery.svg"
+                    <div class="usageflow_item_img"><img class="usageflow_item_photo" src="./images/img_delivery.svg"
                             alt="STEP04"></div>
                     <h3 class="usageflow_item_heading">納品</h3>
                     <p class="usageflow_text">
@@ -372,7 +359,7 @@
                     </p>
                 </li>
                 <li class="usageflow_category">
-                    <div class="usageflow_item_img"><img class="usageflow_item_photo" src="images/img_payment.svg"
+                    <div class="usageflow_item_img"><img class="usageflow_item_photo" src="./images/img_payment.svg"
                             alt="STEP05"></div>
                     <h3 class="usageflow_item_heading">請求・支払い</h3>
                     <p class="usageflow_text">
@@ -386,21 +373,20 @@
 
 
         </section>
-
-        <!-- <-- ここまでご利用の流れ -->
+        <!-- ここまでご依頼の流れ -->
 
         <!-- ここからプロフィール  -->
-        <div class="profile_outer">
-            <div class="heading -profile">
-                <img class="heading_icon -left" src="images/icon_heading.svg" alt="">
+        <section id="profile" class="profile_outer">
+            <h2 class="heading -profile">
+                <img class="heading_icon -left" src="./images/icon_heading.svg" alt="">
                 <span>プロフィール</span>
-                <img class="heading_icon -right" src="images/icon_heading.svg" alt="">
-            </div>
+                <img class="heading_icon -right" src="./images/icon_heading.svg" alt="">
+            </h2>
 
             <div class="profile">
                 <div class="profile_inner">
                     <div>
-                        <img class="profile_images" src="images/img_profile.jpg" alt="プロフィール画像">
+                        <img class="profile_images" src="./images/img_profile.jpg" alt="プロフィール画像">
                         <p class="profile_image_text">※ 画像はイメージです。</p>
                     </div>
                     <div class="profile_box">
@@ -424,7 +410,7 @@
 
 
             </div>
-        </div>
+        </section>
 
         <!-- ここまでプロフィール   -->
 
@@ -432,15 +418,15 @@
     <!--   ここからフッター -->
     <footer>
         <div class="foot_logo">
-            <img src="images/img_logo.svg" alt="写真合成屋">
+            <img src="./images/img_logo.svg" alt="写真合成屋">
         </div>
         <p class="foot_text">問い合わせはメールかお電話にて</p>
         <div class="foot_btn">
             <a class="instagram_btn">
-                <img class="instagram" src="images/img_instagram_logo.svg" alt="インスタ">
+                <img class="instagram" src="./images/img_instagram_logo.svg" alt="インスタ">
             </a>
             <a class="mail_btn">
-                <img class="mail" src="images/img_mail_logo.svg" alt="メール">
+                <img class="mail" src="./images/img_mail_logo.svg" alt="メール">
             </a>
 
         </div>
