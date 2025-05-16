@@ -47,6 +47,7 @@ a:hover {
 
 ul {
   /*左の「・」を消す*/
+  padding: 0;
   list-style: none;
 }
 
@@ -211,7 +212,7 @@ body {
   z-index: 1;
 }
 
-.sp_nav ul {
+.sp_nav > ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,9 +220,8 @@ body {
   height: 100%;
 }
 
-.sp_nav ul li {
+.sp_nav > ul > li {
   padding: 20px;
-  color: #fff;
   font-size: 18px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
@@ -326,16 +326,6 @@ body {
   }
 }
 
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
-}
-
 /* ドロップダウン */
 .list {
   display: flex;
@@ -344,7 +334,8 @@ a {
   background-color: antiquewhite;
 }
 
-.link {
+.link,
+.link-sp {
   position: relative;
   display: flex;
   align-items: center;
@@ -404,10 +395,21 @@ a {
   color: hotpink;
 }
 
+.link-sp.is-show > .dropDown {
+  display: block;
+  width: 100%;
+}
+
+.link-sp .dropDown {
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
 /* ul {
 	padding: 0;
 	list-style: none;
 }
+
 
 a {
 	color: #333;

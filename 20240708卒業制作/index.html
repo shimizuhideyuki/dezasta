@@ -74,7 +74,7 @@
         <nav class="sp_nav">
             <ul>
                 <li>
-                    <div class="link-sp link-hover">
+                    <div class="link-sp is-show link-hover">
                         サービス
                         <div class="dropDown">
                             <ul class="dropDown__list">
@@ -468,9 +468,12 @@
             }, 2000);
 
             // ハンバーガー
-            $('.sp_btn, .sp_nav li').on('click', function () {
+            $('.sp_btn, .sp_nav li:not(:first-child)').on('click', function () {
                 $('.sp_nav').fadeToggle();
                 $('.sp_btn').toggleClass('open');
+            });
+            $('.link-sp').on('click', function () {
+                $(this).toggleClass('is-show');
             });
 
             // スライダー
