@@ -94,91 +94,6 @@
                 <li><a href="">03-6416-4202</a></li>
             </ul>
         </nav>
-
-
-
-
-
-
-
-
-        <!-- <header class="header">
-
-            <h1 class="header_logo">
-                <img src="./images/img_logo.svg" alt="写真合成屋">
-            </h1>
-            <div class="header_wrap">
-                <nav class="pc_nav">
-                    <ul>
-                        <li><a href="service/combined.html">サービス</a></li>
-                        <li><a href="">ご依頼の流れ</a></li>
-                        <li><a href="">よくあるご質問</a></li>
-                        <li><a href="">プロフィール</a></li>
-                        <li><a href="">03-6416-4202</a></li>
-    
-                    </ul>
-                </nav>
- 
-                <a class="contact" href="#">
-                    <span>
-                        CONTACT<br>
-                        お問合せ
-                    </span>
-                </a>
-            </div>
-     -->
-
-
-
-
-
-        <!-- <nav class="nav">
-            <ul class="list">
-                <li class="list__item">
-                    <a href="#" class="link">home</a>
-                </li>
-                <li class="list__item">
-                    <a href="#" class="link">about</a>
-                </li>
-                <li class="list__item">
-                    <a href="#" class="link">greeting</a>
-                </li>
-                <li class="list__item">
-                    <div class="link link-hover">
-                        product
-                        <div class="dropDown">
-                            <ul class="dropDown__list">
-                                <li class="dropDown__item">
-                                    <a href="#" class="dropDown__link">hoge</a>
-                                </li>
-                                <li class="dropDown__item">
-                                    <a href="#" class="dropDown__link">fuga</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="list__item">
-                    <div class="link link-hover">
-                        access
-                        <div class="dropDown">
-                            <ul class="dropDown__list">
-                                <li class="dropDown__item">
-                                    <a href="#" class="dropDown__link">hoge</a>
-                                </li>
-                                <li class="dropDown__item">
-                                    <a href="#" class="dropDown__link">fuga</a>
-                                </li>
-                            </ul> -->
-        <!-- </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
- -->
-
-
-
     </header>
 
     <div class="header_slider">
@@ -459,6 +374,7 @@
         <div class="linear-gradient"></div>
     </footer>
 
+    <script src="./js/script.js"></script>
     <script>
         $(function () {
             // タイマー機能
@@ -466,15 +382,6 @@
                 // ページが読み込まれて3秒後にここに記述された処理が発動します。
                 $('.loading').fadeOut();
             }, 2000);
-
-            // ハンバーガー
-            $('.sp_btn, .sp_nav li:not(:first-child)').on('click', function () {
-                $('.sp_nav').fadeToggle();
-                $('.sp_btn').toggleClass('open');
-            });
-            $('.link-sp').on('click', function () {
-                $(this).toggleClass('is-show');
-            });
 
             // スライダー
             $('.header_slick').slick({
