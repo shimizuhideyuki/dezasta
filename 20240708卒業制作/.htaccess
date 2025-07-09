@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Basic"
+AuthUserFile /home/xs35835888/xs35835888.xsrv.jp/public_html/.htpasswd
+require valid-user
